@@ -36,7 +36,7 @@ maneuver to get all the pancakes happy side up, if you make optimal choices?
 ## Input
 The first line of the input gives the number of test cases, T. T test cases follow. Each consists of one line
 with a string S, each character of which is either + (which represents a pancake that is initially happy side
-up) or ­ (which represents a pancake that is initially blank side up). The string, when read left to right,
+up) or \­ (which represents a pancake that is initially blank side up). The string, when read left to right,
 represents the stack when viewed from top to bottom.
 ## Output
 For each test case, output one line containing Case #x: y, where x is the test case number (starting
@@ -45,7 +45,7 @@ pancakes happy side up.
 
 ## Limits
 * 1 ≤ T ≤ 100.
-* Every character in S is either + or ­.
+* Every character in S is either + or \­.
 * Small dataset
   * 1 ≤ length of S ≤ 10.
 * Large dataset
@@ -53,11 +53,11 @@ pancakes happy side up.
 
 ## Sample Input
 	5
-	­
-    ­+
-	+­
+	\­
+    \­+
+	+\­
 	+++
-	­­+­
+	\­\­+\­
 
 ## Sample Output
 	Case #1: 1
@@ -69,9 +69,9 @@ pancakes happy side up.
 In Case #1, you only need to execute the maneuver once, flipping the first (and only) pancake.<br/>
 In Case #2, you only need to execute the maneuver once, flipping only the first pancake.<br/>
 In Case #3, you must execute the maneuver twice. One optimal solution is to flip only the first pancake,
-changing the stack to ­­, and then flip both pancakes, changing the stack to \+\+. Notice that you cannot
+changing the stack to \­\­, and then flip both pancakes, changing the stack to \+\+. Notice that you cannot
 just flip the bottom pancake individually to get a one­move solution; every time you execute the
 maneuver, you must select a stack starting from the top.<br/>
 In Case #4, all of the pancakes are already happy side up, so there is no need to do anything.<br/>
-In Case #5, one valid solution is to first flip the entire stack of pancakes to get +­++, then flip the top
-pancake to get ­­++, then finally flip the top two pancakes to get ++++.
+In Case #5, one valid solution is to first flip the entire stack of pancakes to get +\­++, then flip the top
+pancake to get \­\­++, then finally flip the top two pancakes to get ++++.
