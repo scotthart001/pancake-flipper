@@ -1,10 +1,6 @@
 # pancake-flipper
 A theoretical pancake flipper with x-ray vision, turning pancakes happy-side up.
 
-## Revenge of the Pancakes
-This problem came from a Google Code Jam project that was made available online in 2016. Feel free to
-use the language you feel most comfortable in, but Go is our preferred language if you are able to use it.
-
 ## Problem
 The Infinite House of Pancakes has just introduced a new kind of pancake! It has a happy face made of
 chocolate chips on one side (the "happy side"), and nothing on the other side (the "blank side").
